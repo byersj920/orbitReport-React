@@ -12,12 +12,12 @@ return (
     </tr>
      </thead>
      <tbody>
-      {sat.map((id, data) => (
-      <tr key={id.id}>
-         <td>{id.name}</td>
-         <td>{id.type}</td>
-         <td>{id.launchDate}</td>
-         <td>{id.operational === true? "Active" : "Inactive"}</td>
+      {sat.map((data) => (
+      <tr key={data.id}>
+         <td>{data.name}</td>
+         <td>{data.type}</td>
+         <td>{data.launchDate}</td>
+         <td>{data.operational === true? "Active" : "Inactive"}</td>
       </tr>
    ))}
      </tbody>
